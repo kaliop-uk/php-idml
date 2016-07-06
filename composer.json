@@ -1,5 +1,5 @@
 {
-    "name": "kaliop/php-idml",
+    "name": "kaliop/phpidml",
     "description": "Package for managing IDML files",
     "type": "library",
     "keywords": ["idml", "In Design", "InDesign"],
