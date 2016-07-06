@@ -4,7 +4,7 @@
     "type": "library",
     "keywords": ["idml", "In Design", "InDesign"],
     "homepage": "https://github.com/kaliop-uk/php-idml",
-    "license": "MIT",
+    "license": "GPL-2.0",
     "authors": [
         {
             "name": "Zandr Martin",
@@ -18,5 +18,11 @@
             "homepage": "https://github.com/DeClemo",
             "role": "Developer"
         }
-    ]
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "autoload": {
+        "psr-4": { "Kaliop\\IDML\\": "" }
+    }
 }
