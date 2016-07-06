@@ -1,0 +1,22 @@
+{
+    "name": "kaliop/php-idml",
+    "description": "Package for managing IDML files",
+    "type": "library",
+    "keywords": ["idml", "In Design", "InDesign"],
+    "homepage": "https://github.com/kaliop-uk/php-idml",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zandr Martin",
+            "email": "",
+            "homepage": "https://github.com/zandrmartin",
+            "role": "Developer"
+        },
+        {
+            "name": "Daniel Clements",
+            "email": "daniel@clements.id.au",
+            "homepage": "https://github.com/DeClemo",
+            "role": "Developer"
+        }
+    ]
+}
