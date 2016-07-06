@@ -1,5 +1,6 @@
 <?php
-namespace Kaliop\IDML\;
+namespace Kaliop\IDML;
+
 /**
  * An object that handles all of the individual files in an IDML package.
  * This is a very simple class that was developed as part of a much larger
@@ -146,7 +147,7 @@ class Package
 	/**
 	 * Master spreads setter. If you only have one, wrap it in [] before passing.
 	 * @param array $val The array of master spreads.
-	 * @return Kaliop\IDML\Package This object for method chaining.
+	 * @return \Kaliop\IDML\Package This object for method chaining.
 	 */
     public function setMasterSpreads(array $val)
     {
@@ -165,7 +166,7 @@ class Package
 	/**
 	 * Graphic setter.
 	 * @param \DOMDocument $val The Graphic.xml file's DOMDocument.
-	 * @return Kaliop\IDML\Package This object for method chaining.
+	 * @return \Kaliop\IDML\Package This object for method chaining.
 	 */
     public function setGraphic(\DOMDocument $val)
     {
@@ -184,7 +185,7 @@ class Package
 	/**
 	 * Fonts setter.
 	 * @param \DOMDocument $val The Fonts.xml file's DOMDocument.
-	 * @return Kaliop\IDML\Package This object for method chaining.
+	 * @return \Kaliop\IDML\Package This object for method chaining.
 	 */
     public function setFonts(\DOMDocument $val)
     {
@@ -203,7 +204,7 @@ class Package
 	/**
 	 * Styles setter.
 	 * @param \DOMDocument $val The Styles.xml file's DOMDocument.
-	 * @return Kaliop\IDML\Package This object for method chaining.
+	 * @return \Kaliop\IDML\Package This object for method chaining.
 	 */
     public function setStyles(\DOMDocument $val)
     {
@@ -222,7 +223,7 @@ class Package
 	/**
 	 * Preferences setter.
 	 * @param \DOMDocument $val The Preferences.xml file's DOMDocument.
-	 * @return Kaliop\IDML\Package This object for method chaining.
+	 * @return \Kaliop\IDML\Package This object for method chaining.
 	 */
     public function setPreferences(\DOMDocument $val)
     {
@@ -248,7 +249,7 @@ class Package
 	/**
 	 * Spreads setter. If you only have one, wrap it in [] before passing.
 	 * @param array $val The array of spreads.
-	 * @return Kaliop\IDML\Package This object for method chaining.
+	 * @return \Kaliop\IDML\Package This object for method chaining.
 	 */
     public function setSpreads(array $val)
     {
@@ -267,7 +268,7 @@ class Package
 	/**
 	 * Stories setter. If you only have one, wrap it in [] before passing.
 	 * @param array $val The array of stories.
-	 * @return Kaliop\IDML\Package This object for method chaining.
+	 * @return \Kaliop\IDML\Package This object for method chaining.
 	 */
     public function setStories(array $val)
     {
@@ -286,7 +287,7 @@ class Package
 	/**
 	 * Backing story setter.
 	 * @param \DOMDocument $val The BackingStory.xml file's DOMDocument.
-	 * @return Kaliop\IDML\Package This object for method chaining.
+	 * @return \Kaliop\IDML\Package This object for method chaining.
 	 */
     public function setBackingStory(\DOMDocument $val)
     {
@@ -305,7 +306,7 @@ class Package
 	/**
 	 * Tags setter.
 	 * @param \DOMDocument $val The Tags.xml file's DOMDocument.
-	 * @return Kaliop\IDML\Package This object for method chaining.
+	 * @return \Kaliop\IDML\Package This object for method chaining.
 	 */
     public function setTags(\DOMDocument $val)
     {
@@ -324,7 +325,7 @@ class Package
 	/**
 	 * Mapping setter.
 	 * @param \DOMDocument $val The Mapping.xml file's DOMDocument.
-	 * @return Kaliop\IDML\Package This object for method chaining.
+	 * @return \Kaliop\IDML\Package This object for method chaining.
 	 */
     public function setMapping(\DOMDocument $val)
     {
@@ -410,7 +411,7 @@ class Package
      * This is the master load method that will create populate the object with
      * DOMDocuments of the component XML files. You need to set the location of
      * the IDML before this method is called - either by passing it with the
-     * instantiation (new Kaliop\IDML\Package("idmlfile.idml")) or by calling
+     * instantiation (new \Kaliop\IDML\Package("idmlfile.idml")) or by calling
      * the setZip() or setDirectory() methods.
      */
     public function load()
